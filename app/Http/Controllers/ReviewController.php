@@ -25,7 +25,7 @@ class ReviewController extends Controller
 
         // Kiểm tra xem người dùng hiện tại có phải người đặt booking không
         if ($booking->user_id !== auth()->id()) {
-            abort(403, 'Không có quyền thực hiện thao tác này');
+            abort(403, 'Không có quyền thực hiện thao tác ');
         }
 
         $request->validate([
