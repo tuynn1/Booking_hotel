@@ -9,7 +9,10 @@ use Illuminate\Support\Facades\Route;
 // http://127.0.0.1:8000/admin/products/update-products
 
 Route::get('/', function () {
-    return view('layout.client');
+    return view('client/layouts/home');
+});
+Route::get('/contact', function () {
+    return view('client/layouts/contact');
 });
 Route::get('/admin', function () {
     return view('layout.admin');
